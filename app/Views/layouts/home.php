@@ -5,89 +5,69 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url() ?>/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 </head>
 
 <body>
-    <!-- <nav>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">New Site</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul>
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="card-body mx-md-4">
+
+                                    <div class="text-center">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp" style="width: 185px;" alt="logo">
+                                        <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+                                    </div>
+                                    <form id="formid">
+                                        <p>Please login to your account</p>
+                                        <input id="csrf" type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form2Example11">Username</label>
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Phone number or email address" />
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form2Example22">Password</label>
+                                            <input type="password" name="password" id="password" class="form-control" />
+                                        </div>
+                                        <div class="text-center pt-1 mb-5 pb-1 d-grid gap-2">
+                                            <button class="btn btn-danger" type="submit" id="login">Login</button>
+                                            <a class="text-muted" href="#!">Forgot password?</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center pb-4">
+                                            <p class="mb-0 me-2">Don't have an account?</p>
+                                            <a type="button" class="btn btn-outline-danger" href="<?php echo base_url('register')?>">Create new</a>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                    <h4 class="mb-4">We are more than just a company</h4>
+                                    <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </nav> -->
-
-    <main class="main">
-        <div class="row content">
-            <div class="col-6">
-                <h1>Web Design & <br><span>Development</span> <br>Course</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dicta voluptates voluptatibus
-                     est repellendus incidunt unde rem ea eaque accusamus, dolorum odio esse neque recusandae
-                eveniet necessitatibus suscipit. Mollitia, assumenda.
-                </p>
-                <button class="cn"><a href="">JOIN US</a></button>
-            </div>
-
-            <div class="col-6 form">
-                <form class="">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" id="" placeholder="Enter Email Here">
-                    <input type="password" name="password" id="" placeholder="Enter Password Here">
-                    <button type="submit" class="btn btn-primary btnn">Login</button>
-
-                    <p class="link">Don`t have an account<br>
-                        <a href="">Sign up</a> here
-                    </p>
-                </form>
-            </div>
         </div>
-
-
-        <!-- <div class="row justify-content-center login-form">
-            <div class="col-3">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div> -->
-    </main>
-
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="<?= base_url() ?>/js/main.js"></script>
 </body>
 
 </html>
